@@ -1,0 +1,22 @@
+# Logs
+logs/
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python Cache
+__pycache__/
+*.pyc
+.cache/contribution-animation/
+.cache/hero-optimization/
+.env
+
+# Fontshare fonts are downloaded locally; only rendered SVG lettering is tracked.
+.cache/fontshare/
+
+# Personal-use Bizantheum download; do not redistribute font software.
+.cache/bizantheum/

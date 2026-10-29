@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contribution animation preview</title>
+<style>
+  body { margin: 32px auto; padding: 0 16px; max-width: 1080px; background: #0d1117; color: #f0f6fc; font: 14px system-ui; }
+  img { display: block; width: 100%; height: auto; margin: 16px 0 32px; }
+  button { padding: 8px 16px; cursor: pointer; }
+</style>
+<button id="replay">Replay both images</button>
+<p>Lossless animated PNG — README default in current browsers</p>
+<img id="png" src="profile-3d-contrib/profile-night-green.png" alt="Animated PNG preview">
+<p>GIF fallback — one play, then holds the final frame</p>
+<img id="gif" src="profile-3d-contrib/profile-night-green.gif" alt="GIF preview">
+<p>Original static SVG — compare the final frame</p>
+<img src="profile-3d-contrib/profile-night-green.svg" alt="Original SVG">
+<script>
+  document.querySelector('#replay').onclick = () => {
+    for (const id of ['png', 'gif']) document.getElementById(id).src =
+      `profile-3d-contrib/profile-night-green.${id}?replay=${Date.now()}`;
+  };
+</script>
+</html>

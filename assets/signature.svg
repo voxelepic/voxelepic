@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="398" height="216" viewBox="-16 -32 398 216" fill="none" role="img" aria-labelledby="signature-title">
+  <title id="signature-title">Viraj Singh Ranawat signature</title>
+  <!-- Original pen paths, sequenced for a fast, single handwriting animation. No background. -->
+  <style>
+    /* Emil design-engineering ease-out: quick starts with a soft pen lift. */
+    .stroke { stroke-dasharray: 1; stroke-dashoffset: 0; }
+    .stroke-1 { animation: signature-stroke-1 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-1 {
+      0%, 7.6923% { stroke-dashoffset: 1; opacity: 0; }
+      7.6942% { stroke-dashoffset: 1; opacity: 1; }
+      25.6763%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-2 { animation: signature-stroke-2 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-2 {
+      0%, 25.6763% { stroke-dashoffset: 1; opacity: 0; }
+      25.6783% { stroke-dashoffset: 1; opacity: 1; }
+      28.2548%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-3 { animation: signature-stroke-3 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-3 {
+      0%, 28.2548% { stroke-dashoffset: 1; opacity: 0; }
+      28.2567% { stroke-dashoffset: 1; opacity: 1; }
+      49.2533%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-4 { animation: signature-stroke-4 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-4 {
+      0%, 49.2533% { stroke-dashoffset: 1; opacity: 0; }
+      49.2552% { stroke-dashoffset: 1; opacity: 1; }
+      50.8965%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-5 { animation: signature-stroke-5 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-5 {
+      0%, 50.8965% { stroke-dashoffset: 1; opacity: 0; }
+      50.8985% { stroke-dashoffset: 1; opacity: 1; }
+      52.8738%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-6 { animation: signature-stroke-6 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-6 {
+      0%, 52.8738% { stroke-dashoffset: 1; opacity: 0; }
+      52.8758% { stroke-dashoffset: 1; opacity: 1; }
+      78.0573%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-7 { animation: signature-stroke-7 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-7 {
+      0%, 78.0573% { stroke-dashoffset: 1; opacity: 0; }
+      78.0592% { stroke-dashoffset: 1; opacity: 1; }
+      79.7006%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-8 { animation: signature-stroke-8 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-8 {
+      0%, 79.7006% { stroke-dashoffset: 1; opacity: 0; }
+      79.7025% { stroke-dashoffset: 1; opacity: 1; }
+      81.3438%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-9 { animation: signature-stroke-9 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-9 {
+      0%, 81.3438% { stroke-dashoffset: 1; opacity: 0; }
+      81.3458% { stroke-dashoffset: 1; opacity: 1; }
+      83.1331%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-10 { animation: signature-stroke-10 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-10 {
+      0%, 83.1331% { stroke-dashoffset: 1; opacity: 0; }
+      83.1350% { stroke-dashoffset: 1; opacity: 1; }
+      96.7135%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-11 { animation: signature-stroke-11 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-11 {
+      0%, 96.7135% { stroke-dashoffset: 1; opacity: 0; }
+      96.7154% { stroke-dashoffset: 1; opacity: 1; }
+      98.3567%, 100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    .stroke-12 { animation: signature-stroke-12 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes signature-stroke-12 {
+      0%, 98.3567% { stroke-dashoffset: 1; opacity: 0; }
+      98.3587% { stroke-dashoffset: 1; opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .stroke { animation: none; }
+      .stroke { stroke-dashoffset: 0; opacity: 1; }
+    }
+  </style>
+  <g transform="rotate(-8 183 76.5)" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path class="stroke stroke-1" pathLength="1" d="M138.274 59.0929C140.13 58.8289 144.65 58.2928 148.514 58.8208C150.078 59.0346 150.53 60.4048 150.406 61.4768C150.282 62.5489 149.49 63.6049 148.422 64.2809C143.47 67.4151 133.794 68.6769 114.746 69.2289C104.782 69.5176 100.69 64.7089 96.558 61.9048C93.759 60.0054 92.146 56.9728 91.3461 53.2569C90.1181 47.5532 92.3941 42.5728 94.9221 40.3088C100.069 35.6993 108.114 31.6369 117.57 25.3849C124.231 20.9805 131.298 16.9809 136.79 12.9729C139.097 11.2894 141.994 10.3009 144.654 8.70486C145.994 7.90086 147.314 7.10886 149.446 9.20886C161.055 20.6437 163.826 34.7409 170.122 47.8529C175.715 59.5009 182.53 75.3169 184.798 82.6609C187.347 90.9133 187.975 97.3967 187.556 102.383" />
+    <path class="stroke stroke-2" pathLength="1" d="M187.556 102.383C187.351 104.829 186.893 106.915 186.286 108.673C184.296 114.435 181.746 118.013 181.21 119.221C179.821 122.351 182.522 113.776 187.556 102.383Z" />
+    <path class="stroke stroke-3" pathLength="1" d="M187.556 102.383C189.155 98.7648 190.989 94.8626 193.002 90.9609C198.599 80.1128 208.482 64.7409 216.81 52.3609C225.138 39.9809 232.002 31.2689 239.498 23.8769C253.949 9.62662 265.186 3.90086 269.31 2.17286C271.357 1.31529 273.17 0.180857 274.122 1.88086C280.437 13.158 270.034 24.3729 266.022 33.7249C264.983 36.1457 263.634 38.7728 253.978 51.8808C244.322 64.9888 226.37 88.4849 216.198 102.173C203.85 118.79 199.106 126.517 192.722 135.161C190.399 138.306 188.404 141.031 186.781 143.283" />
+    <path class="stroke stroke-4" pathLength="1" d="M186.781 143.283C184.954 145.818 183.598 147.754 182.773 149.018" />
+    <path class="stroke stroke-5" pathLength="1" d="M186.781 143.283C197.009 143.118 210.248 143.107 215.66 143.189" />
+    <path class="stroke stroke-6" pathLength="1" d="M186.781 143.283C185.421 143.305 184.114 143.329 182.886 143.357C171.114 143.621 167.154 144.149 138.846 144.553C110.538 144.957 58.0021 145.221 30.0141 145.489C2.02605 145.757 0.178062 146.021 1.20607 146.553C2.23407 147.085 6.19407 147.877 66.1821 148.417C95.8598 148.684 139.221 148.884 182.773 149.018" />
+    <path class="stroke stroke-7" pathLength="1" d="M182.773 149.018C182.277 149.778 181.973 150.295 181.874 150.553C180.813 153.329 184.763 151.529 190.473 149.041" />
+    <path class="stroke stroke-8" pathLength="1" d="M182.773 149.018C185.34 149.025 187.908 149.033 190.473 149.041" />
+    <path class="stroke stroke-9" pathLength="1" d="M190.473 149.041C194.431 147.316 199.234 145.261 203.802 144.169C207.361 143.318 212.573 143.179 215.66 143.189" />
+    <path class="stroke stroke-10" pathLength="1" d="M190.473 149.041C232.362 149.162 273.69 149.223 302.43 149.225C362.794 149.229 364.114 148.965 364.266 148.565C365.512 145.286 356.962 146.293 353.498 145.765L353.485 145.754C351.611 144.175 350.012 142.828 347.494 142.429C346.026 142.293 344.178 142.293 342.274 142.293" />
+    <path class="stroke stroke-11" pathLength="1" d="M215.66 143.189C217.957 143.196 219.076 143.287 217.458 143.229C217.036 143.214 216.427 143.2 215.66 143.189Z" />
+    <path class="stroke stroke-12" pathLength="1" d="M251.074 123.093V122.293" />
+  </g>
+</svg>

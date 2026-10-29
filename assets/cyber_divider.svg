@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 16" width="100%" height="16" fill="none">
+  <defs>
+    <!-- Core White Gradient -->
+    <linearGradient id="white_grad_core" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="20%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="80%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <!-- Soft Glow Gradient -->
+    <linearGradient id="white_grad_glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3" />
+      <stop offset="65%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <!-- Ambient Glow Line -->
+  <line x1="0" y1="8" x2="920" y2="8" stroke="url(#white_grad_glow)" stroke-width="4" />
+  <!-- Sharp Core Line -->
+  <line x1="0" y1="8" x2="920" y2="8" stroke="url(#white_grad_core)" stroke-width="1.2" />
+</svg>

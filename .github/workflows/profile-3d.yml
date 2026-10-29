@@ -1,0 +1,42 @@
+name: GitHub-Profile-3D-Contrib
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # Runs daily at 18:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dashboard rendering dependencies
+        run: |
+          python -m pip install fonttools==4.63.0 Pillow==12.2.0 playwright==1.62.0
+          python -m playwright install --with-deps chromium
+          python -c "import sys; sys.path.insert(0, 'assets/readme-panels'); from alpino import download_fonts; download_fonts()"
+
+      - name: Generate 3D Contribution Graph
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: |
+          python generate_3d_contrib.py
+
+      - name: Commit & Push Changes
+        run: |
+          git config user.name "voxelepic"
+          git config user.email "voxelepic@gmail.com"
+          git add profile-3d-contrib/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(profile): auto-update 3d contribution graph [skip ci]" && git push)
