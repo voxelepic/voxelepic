@@ -5,7 +5,6 @@ The SVG remains the source of truth, including its embedded font and widgets.
 """
 import argparse
 import io
-import math
 from pathlib import Path
 
 from PIL import Image, ImageChops
@@ -64,8 +63,11 @@ SET_FRAME = """time => {
 }"""
 
 
-def capture(page):
-    return Image.open(io.BytesIO(page.screenshot(omit_background=True))).convert("RGBA")
+def capture(page, *, hide_calendar=False):
+    # Screenshot styles are temporary and never enter the encoded frames.
+    style = "#isometric-grid { visibility: hidden !important; }" if hide_calendar else None
+    pixels = page.screenshot(omit_background=True, style=style)
+    return Image.open(io.BytesIO(pixels)).convert("RGBA")
 
 
 def render_frames(source):
@@ -78,8 +80,7 @@ def render_frames(source):
         if not page.evaluate("document.fonts.check('12px GeistPixelTriangle')"):
             raise RuntimeError("Embedded dashboard font did not load")
         original = capture(page)
-        widgets = page.locator('#date-range, #radar-chart, #donut-chart').evaluate_all(
-            "els => els.map(el => {const r=el.getBoundingClientRect(); return [r.x,r.y,r.right,r.bottom]})")
+        static_artwork = capture(page, hide_calendar=True)
         metrics = page.evaluate(INITIALIZE)
         if not metrics["cells"]:
             raise ValueError("Source SVG has no calendar cells; refusing an empty replacement")
@@ -87,11 +88,11 @@ def render_frames(source):
         for index in range(round(DURATION * 1000 / FRAME_MS) + 1):
             page.evaluate(SET_FRAME, index * FRAME_MS / 1000)
             frame = capture(page)
-            # Every non-calendar widget must be pixel-identical throughout.
-            for bounds in widgets:
-                box = tuple(math.floor(v) if i < 2 else math.ceil(v) for i, v in enumerate(bounds))
-                if ImageChops.difference(frame.crop(box), original.crop(box)).getbbox(alpha_only=False):
-                    raise AssertionError("A non-calendar widget changed")
+            # Widget bounding rectangles include transparent space where calendar
+            # bars can move. Isolate all non-calendar artwork before comparing it.
+            static_frame = capture(page, hide_calendar=True)
+            if ImageChops.difference(static_frame, static_artwork).getbbox(alpha_only=False):
+                raise AssertionError("A non-calendar widget changed")
             frames.append(frame)
         if ImageChops.difference(frames[-1], original).getbbox(alpha_only=False):
             raise AssertionError("Final frame differs from the original static SVG rendering")
